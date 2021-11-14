@@ -1,4 +1,4 @@
-global y T NItterations
+function [A,B,pi]= HMM(y,T,NItterations)
 for I=1:NItterations
 O=[1 2 3];
 N=3;
