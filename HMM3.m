@@ -1,4 +1,5 @@
 function [A,B,pi]= HMM(y,T,NItterations)
+s=0; s1=0; s2=0; s3=0; num=0;
 for I=1:NItterations
 O=[1 2 3];
 N=3;
@@ -73,5 +74,4 @@ num=sum(s2,1);
 B(i)=num/sum(gamma(i,1:T),2);
 end
 A=sum(psi,2)/sum(gamma,2);
-clear s s1 s2 s3 num %инициализировать в начале
 end
